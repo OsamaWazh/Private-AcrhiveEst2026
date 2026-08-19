@@ -3,185 +3,459 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Private Archive Est. 2026</title>
 
-    <!-- SCRIPT FONT FOR NAME -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
-
-    <!-- OUR CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
     <!-- =========================
-         OPENING SCREEN
+         FIXED BACKGROUND
     ========================== -->
 
-    <section class="intro-screen">
+    <div class="archive-background"></div>
+    <div class="archive-overlay"></div>
 
-        <div class="intro-meta intro-top">
-            EST. 2026
-        </div>
 
-        <div class="intro-meta intro-left">
+    <!-- =========================
+         TOP BAR
+    ========================== -->
+
+    <header class="top-bar">
+
+        <div class="top-left">
             PRIVATE ARCHIVE
         </div>
 
-        <div class="intro-name">
-            <h1 class="first-name">James Tucker</h1>
+        <div class="archive-badge">
+            J.T&nbsp;&nbsp;EST. 2026
         </div>
 
-        <div class="intro-meta intro-bottom-left">
-            VOL. I
+        <button
+            id="soundToggle"
+            class="sound-toggle"
+            type="button"
+        >
+            SOUND OFF ○
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         SIDE NAVIGATION
+    ========================== -->
+
+    <nav class="archive-nav">
+
+        <a href="#ideas">
+            <span>001</span>
+            IDEAS
+        </a>
+
+        <a href="#references">
+            <span>002</span>
+            REFERENCES
+        </a>
+
+        <a href="#brand">
+            <span>003</span>
+            BRAND
+        </a>
+
+        <a href="#garments">
+            <span>004</span>
+            GARMENTS
+        </a>
+
+        <a href="#music">
+            <span>005</span>
+            MUSIC + BAND
+        </a>
+
+        <a href="#photography">
+            <span>006</span>
+            PHOTOGRAPHY
+        </a>
+
+        <a href="#writings">
+            <span>007</span>
+            WRITINGS
+        </a>
+
+        <a href="#found">
+            <span>008</span>
+            FOUND
+        </a>
+
+    </nav>
+
+
+    <!-- =========================
+         RIGHT PROGRESS BAR
+    ========================== -->
+
+    <div class="scroll-progress">
+
+        <span>01</span>
+
+        <div class="progress-line">
+            <div
+                id="progressDot"
+                class="progress-dot"
+            ></div>
         </div>
 
-        <div class="intro-meta intro-bottom-right">
-            CREATIVE RECORD
-        </div>
+        <span>08</span>
 
-        <div class="scroll-indicator">
+    </div>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <h1 class="hero-name">
+            JAMES TUCKER
+        </h1>
+
+        <div class="hero-arrow">
             ↓
+        </div>
+
+
+        <div class="hero-footer hero-footer-left">
+            © JAMES TUCKER
+            <br>
+            ALL RIGHTS RESERVED
+        </div>
+
+
+        <div class="hero-footer hero-footer-right">
+            ARCHIVE 001–008
+            <br>
+            SAN FRANCISCO, CA
         </div>
 
     </section>
 
 
     <!-- =========================
-         ARCHIVE
+         IDEAS
     ========================== -->
 
-    <div class="archive-layout">
+    <section
+        id="ideas"
+        class="ideas-section"
+    >
 
-        <!-- LEFT ARCHIVE MAP -->
+        <div class="ideas-header">
 
-        <aside class="archive-map">
+            <span class="section-number">
+                001
+            </span>
 
-            <div class="archive-heading">
-                <h2>PRIVATE ARCHIVE</h2>
-                <p>EST. 2026</p>
+            <h2>
+                IDEAS
+            </h2>
+
+            <p>
+                Concepts, unfinished thoughts,
+                garments, campaign ideas,
+                references and experiments.
+            </p>
+
+        </div>
+
+
+        <!-- CAMPAIGN TEXT -->
+
+        <div class="campaign-piece">
+
+            <span class="archive-label">
+                CAMPAIGN / 001
+            </span>
+
+            <h3>
+                A LIFE PEOPLE
+                <br>
+                WISH THEY LIVED.
+            </h3>
+
+            <div class="paper-note campaign-note">
+
+                <strong>
+                    CAMPAIGN IDEA
+                </strong>
+
+                <p>
+                    Create campaigns that feel like
+                    memories from a life people wish
+                    they lived.
+                </p>
+
+                <p>
+                    Young, free, well dressed,
+                    cultured and effortlessly cool.
+                </p>
+
+                <p>
+                    Focus on real moments, nostalgia,
+                    mystery and belonging rather
+                    than showing wealth.
+                </p>
+
+                <p>
+                    Make the clothes feel like
+                    a piece of that lifestyle.
+                </p>
+
             </div>
 
-            <nav>
-                <a href="#ideas">001 / IDEAS</a>
-                <a href="#references">002 / REFERENCES</a>
-                <a href="#brand">003 / BRAND</a>
-                <a href="#garments">004 / GARMENTS</a>
-                <a href="#music">005 / MUSIC + BAND</a>
-                <a href="#photography">006 / PHOTOGRAPHY</a>
-                <a href="#writings">007 / WRITINGS</a>
-                <a href="#found">008 / FOUND</a>
-            </nav>
-
-        </aside>
+        </div>
 
 
-        <!-- MAIN ARCHIVE -->
+        <!-- RANDOM IMAGE ARCHIVE -->
 
-        <main class="archive-content">
+        <div class="ideas-gallery">
 
-            <section id="ideas" class="archive-section">
-                <p class="section-number">001</p>
+            <img
+                src="./images/IMG_3697.jpg"
+                class="idea-image image-1"
+                alt=""
+            >
 
-                <h2>IDEAS</h2>
+            <img
+                src="./images/IMG_3856.jpg"
+                class="idea-image image-2"
+                alt=""
+            >
 
-                <p class="section-description">
-                    Concepts, unfinished thoughts, garment ideas,
-                    campaigns and experiments.
+            <img
+                src="./images/IMG_3857.jpg"
+                class="idea-image image-3"
+                alt=""
+            >
+
+            <img
+                src="./images/IMG_3872.jpg"
+                class="idea-image image-4"
+                alt=""
+            >
+
+            <img
+                src="./images/IMG_3873.jpg"
+                class="idea-image image-5"
+                alt=""
+            >
+
+            <img
+                src="./images/IMG_3874.jpg"
+                class="idea-image image-6"
+                alt=""
+            >
+
+            <img
+                src="./images/IMG_3875.jpg"
+                class="idea-image image-7"
+                alt=""
+            >
+
+            <img
+                src="./images/IMG_3885.AVIF"
+                class="idea-image image-8"
+                alt=""
+            >
+
+            <img
+                src="./images/IMG_3886.AVIF"
+                class="idea-image image-9"
+                alt=""
+            >
+
+            <img
+                src="./images/IMG_3887.JPG"
+                class="idea-image image-10"
+                alt=""
+            >
+
+            <img
+                src="./images/IMG_3888.JPG"
+                class="idea-image image-11"
+                alt=""
+            >
+
+            <img
+                src="./images/IMG_3889.AVIF"
+                class="idea-image image-12"
+                alt=""
+            >
+
+            <img
+                src="./images/IMG_3890.AVIF"
+                class="idea-image image-13"
+                alt=""
+            >
+
+            <img
+                src="./images/IMG_3891.JPG"
+                class="idea-image image-14"
+                alt=""
+            >
+
+            <img
+                src="./images/IMG_3892.JPG"
+                class="idea-image image-15"
+                alt=""
+            >
+
+            <img
+                src="./images/IMG_3893.JPG"
+                class="idea-image image-16"
+                alt=""
+            >
+
+
+            <!-- LITTLE ARCHIVE NOTES -->
+
+            <div class="paper-note note-one">
+
+                <strong>
+                    FOOTWEAR STUDY
+                </strong>
+
+                <p>
+                    Leather slides.
+                    Suede sandals.
+                    Worn finishes.
+                    Everyday objects made better.
                 </p>
-            </section>
+
+            </div>
 
 
-            <section id="references" class="archive-section">
-                <p class="section-number">002</p>
+            <div class="paper-note note-two">
 
-                <h2>REFERENCES</h2>
+                <strong>
+                    BOOT STUDY
+                </strong>
 
-                <p class="section-description">
-                    Clothing, photography, design, objects,
-                    art, architecture and visual research.
+                <p>
+                    Western influence without
+                    becoming costume.
                 </p>
-            </section>
 
-
-            <section id="brand" class="archive-section">
-                <p class="section-number">003</p>
-
-                <h2>BRAND</h2>
-
-                <p class="section-description">
-                    Identity, logos, typography, direction,
-                    campaigns and development of the brand.
+                <p>
+                    Distressed leather,
+                    subtle hardware,
+                    strong shape.
                 </p>
-            </section>
+
+            </div>
 
 
-            <section id="garments" class="archive-section">
-                <p class="section-number">004</p>
+            <div class="paper-note note-three">
 
-                <h2>GARMENTS</h2>
+                <strong>
+                    FOUNDATION PIECES
+                </strong>
 
-                <p class="section-description">
-                    Sketches, samples, fabrics, blanks,
-                    printing, construction and finished pieces.
+                <p>
+                    Rugby shirts.
+                    Henleys.
+                    Sweats.
+                    Tees.
+                    Denim.
+                    Puffers.
                 </p>
-            </section>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
-            <section id="music" class="archive-section">
-                <p class="section-number">005</p>
+    <!-- =========================
+         FUTURE SECTIONS
+    ========================== -->
 
-                <h2>MUSIC + BAND</h2>
-
-                <p class="section-description">
-                    Rehearsals, recordings, performances,
-                    production ideas, arrangements and sound.
-                </p>
-            </section>
-
-
-            <section id="photography" class="archive-section">
-                <p class="section-number">006</p>
-
-                <h2>PHOTOGRAPHY</h2>
-
-                <p class="section-description">
-                    Personal photography, campaigns,
-                    locations, contact sheets and visual studies.
-                </p>
-            </section>
+    <section
+        id="references"
+        class="placeholder-section"
+    >
+        <span>002</span>
+        <h2>REFERENCES</h2>
+    </section>
 
 
-            <section id="writings" class="archive-section">
-                <p class="section-number">007</p>
-
-                <h2>WRITINGS</h2>
-
-                <p class="section-description">
-                    Notes, observations, phrases,
-                    journal entries and creative writing.
-                </p>
-            </section>
+    <section
+        id="brand"
+        class="placeholder-section"
+    >
+        <span>003</span>
+        <h2>BRAND</h2>
+    </section>
 
 
-            <section id="found" class="archive-section">
-                <p class="section-number">008</p>
+    <section
+        id="garments"
+        class="placeholder-section"
+    >
+        <span>004</span>
+        <h2>GARMENTS</h2>
+    </section>
 
-                <h2>FOUND</h2>
 
-                <p class="section-description">
-                    Things that caught my attention
-                    before I knew where they belonged.
-                </p>
-            </section>
+    <section
+        id="music"
+        class="placeholder-section"
+    >
+        <span>005</span>
+        <h2>MUSIC + BAND</h2>
+    </section>
 
-        </main>
 
-    </div>
+    <section
+        id="photography"
+        class="placeholder-section"
+    >
+        <span>006</span>
+        <h2>PHOTOGRAPHY</h2>
+    </section>
+
+
+    <section
+        id="writings"
+        class="placeholder-section"
+    >
+        <span>007</span>
+        <h2>WRITINGS</h2>
+    </section>
+
+
+    <section
+        id="found"
+        class="placeholder-section"
+    >
+        <span>008</span>
+        <h2>FOUND</h2>
+    </section>
+
+
+    <!-- ONLY ONE JAVASCRIPT FILE -->
+
+    <script src="javascript.js"></script>
 
 </body>
 
